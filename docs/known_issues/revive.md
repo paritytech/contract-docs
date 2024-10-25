@@ -23,7 +23,7 @@ resolc `0.1.0-dev-2`
 - [Compiled contract artifacts can exceed the pallet static memory limit and fail to deploy](https://github.com/paritytech/revive/issues/96).
 - [Transfers to inexistant accounts will fail if the transferred value lies below the ED.](https://github.com/paritytech/revive/issues/83) Will be fixed in the pallet to make the ED completely transparent for contracts.
 - [Source level debug information and contract execution tracing](https://github.com/paritytech/revive/issues/18)
-- [Compiling contracts requiring `solc` < `0.8.0` rely on the EVM legacy assembly pipeline. Which is highly experimental](https://github.com/paritytech/revive/issues/89)
+- [Compiling contracts requiring `solc` version earlier than `0.8.0` requires using the EVM legacy assembly pipeline. This is in a highly experimental state.](https://github.com/paritytech/revive/issues/89)
 
 ## Wontfix
 
