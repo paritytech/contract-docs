@@ -1,41 +1,15 @@
-# Website
+# Contracts Docs
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This is the documentation for smart contracts on AssetHub. It is built using Docusaurus.
 
-### Installation
+## Local Development
 
-```
-$ yarn
-```
+Clone the repository and install `node`. Spawn a local server by running these commands
+wherever you cloned the repository to:
 
-### Local Development
-
-```
-$ yarn start
+```bash
+npm install
+npm run start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+It will host the docs at `https://localhost:3000` and reloads automatically when you edit the files.
