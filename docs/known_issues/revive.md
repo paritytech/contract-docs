@@ -22,6 +22,7 @@ resolc `0.1.0-dev-2`
 - IPFS metadata hashes are not supported
 - [Compiled contract artifacts can exceed the pallet static memory limit and fail to deploy](https://github.com/paritytech/revive/issues/96).
 - [Transfers to inexistant accounts will fail if the transferred value lies below the ED.](https://github.com/paritytech/revive/issues/83) Will be fixed in the pallet to make the ED completely transparent for contracts.
+- [Source level debug information and contract execution tracing](https://github.com/paritytech/revive/issues/18)
 
 ## Wontfix
 
