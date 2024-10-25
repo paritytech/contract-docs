@@ -1,6 +1,6 @@
 # Revive
 
-The following issues are known and we are working on it. Please do not open a new issue.
+The following compiler issues are known and we are working on it. Please do not open a new issue.
 
 ## Release
 
