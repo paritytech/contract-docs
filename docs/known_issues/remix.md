@@ -4,15 +4,15 @@ The known issues in our REMIX frontend.
 
 ## Release
 
-remix `0.54-dev`
+REMIX `0.54-dev`
 
 ## Known issues
 
-- Initialization Failures: Occasionally, Remix may fail to load due to backend overload errors. If this occurs, please reload the Remix IDE to restore functionality.
+- Initialization Failures: Occasionally, REMIX may fail to load due to backend overload errors. If this occurs, please reload the REMIX IDE to restore functionality.
 
 - Currency Updates: The display of currency (Wei/Ether) does not dynamically update based on the selected network.
 
-- Loading Problems: Remix may hang during loading, particularly on Windows 10 when using the Chrome browser. We are investigating this issue. If you encounter this, please try restarting your browser and loading Remix again.
+- Loading Problems: REMIX may hang during loading, particularly on Windows 10 when using the Chrome browser. We are investigating this issue. If you encounter this, please try restarting your browser and loading REMIX again.
 
 - DApps Plugin: The DApps plugin is currently non-functional.
 
@@ -20,7 +20,7 @@ remix `0.54-dev`
 
 - Solidity Unit Testing: Solidity unit testing is not operational; only JavaScript-based unit testing is currently functional.
 
-- Parallel Transactions: When sending transactions in Remix, be patient, as Remix may struggle to handle multiple parallel requests effectively. Please avoid initiating multiple transactions simultaneously to prevent errors.
+- Parallel Transactions: When sending transactions in REMIX, be patient, as REMIX may struggle to handle multiple parallel requests effectively. Please avoid initiating multiple transactions simultaneously to prevent errors.
 
 ## Not Tested
 
