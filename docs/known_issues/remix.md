@@ -14,8 +14,6 @@ REMIX `0.54-dev`
 
 - Loading Problems: REMIX may hang during loading, particularly on Windows 10 when using the Chrome browser. We are investigating this issue. If you encounter this, please try restarting your browser and loading REMIX again.
 
-- DApps Plugin: The DApps plugin is currently non-functional.
-
 - Debugger Plugin: The debugger plugin is not functioning properly.
 
 - Solidity Unit Testing: Solidity unit testing is not operational; only JavaScript-based unit testing is currently functional.
