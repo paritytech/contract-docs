@@ -4,7 +4,7 @@ The following compiler issues are known and we are working on it. Please do not 
 
 ## Release
 
-resolc `0.1.0-dev-2`
+resolc `0.1.0-dev-4`
 
 ## Missing features
 
@@ -16,7 +16,6 @@ resolc `0.1.0-dev-2`
 - [Delegate calls are not supported](https://github.com/paritytech/revive/issues/67)
 - [The `blockhash` opcode is not supported](https://github.com/paritytech/revive/issues/61)
 - [The `extcodesize` opcode is not supported](https://github.com/paritytech/revive/issues/58)
-- [The `origin` opcode is not supported](https://github.com/paritytech/revive/issues/59)
 - [Gas limits for contract calls are ignored](https://github.com/paritytech/revive/issues/60)
 - [Gas related opcodes are not supported](https://github.com/paritytech/revive/issues/60)
 - IPFS metadata hashes are not supported
