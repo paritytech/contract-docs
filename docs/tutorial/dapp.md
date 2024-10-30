@@ -50,6 +50,9 @@ This will teach you how to deploy your contract with REMIX.
    ![Confirm transaction](../../static/img/dapp_metamask_deploy.jpeg)
 
    Wait for the deployment to complete, as indicated in the terminal panel.
+
+   ![Terminal panel](../../static/img/dapp_terminal.png)
+
 6. Interact with Deployed contracts.
 
    Once deployed, your contract will appear in the **Deployed/Unpinned Contracts** section of the **Deploy & Run** tab.
