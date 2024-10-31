@@ -17,3 +17,7 @@ your contracts to RISC-V and deploy them to Westend. Eventually, we will provide
 
 In order to develop an App that interacts with your contract you can a Ethereum javascript library of your choice. We
 are using [`ethers.js`](https://ethers.org) in our tests which is the most popular library as of writing this.
+
+## Contribute to this documentation
+
+If you want to improve this documentation please open a pull request [here](https://github.com/paritytech/contract-docs).
