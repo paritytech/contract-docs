@@ -1,6 +1,9 @@
-name: Deploy to GitHub Pages
+name: Build and Deploy to GitHub Pages
 
 on:
+  pull_request:
+    branches:
+    - master
   push:
     branches:
       - master
@@ -24,12 +27,15 @@ jobs:
         run: npm run build
 
       - name: Upload Build Artifact
+        if: github.ref == 'refs/heads/master'
         uses: actions/upload-pages-artifact@v3
         with:
           path: build
 
   deploy:
     name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
     needs: build
 
     permissions:
@@ -40,9 +46,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
-    runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
