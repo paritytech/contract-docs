@@ -54,7 +54,7 @@ most of the heavy lifting is done by C modules.
 
 In order to run Solidity on PolkaVM we need to compile it to RISC-V. For that we need a compiler. It works by using the original `solc` compiler
 and then re-compiling its intermediate representation (YUL) output to RISC-V. This has the benefit of being a much smaller task than implementing
-a full Solidity compiler. We support all quirks and oddities of Solidity and all its different versions by chosing this approach.
+a full Solidity compiler. We support all quirks and oddities of Solidity and all its different versions by choosing this approach.
 
 ## Remix
 
