@@ -19,7 +19,7 @@ resolc `0.1.0-dev.5`
 - [Gas related opcodes are not supported](https://github.com/paritytech/revive/issues/60)
 - IPFS metadata hashes are not supported
 - [Compiled contract artifacts can exceed the pallet static memory limit and fail to deploy](https://github.com/paritytech/revive/issues/96).
-- [Transfers to inexistant accounts will fail if the transferred value lies below the ED.](https://github.com/paritytech/revive/issues/83) Will be fixed in the pallet to make the ED completely transparent for contracts.
+- [Transfers to inexistent accounts will fail if the transferred value lies below the ED.](https://github.com/paritytech/revive/issues/83) Will be fixed in the pallet to make the ED completely transparent for contracts.
 - [Source level debug information and contract execution tracing](https://github.com/paritytech/revive/issues/18)
 - [Compiling contracts requiring `solc` version earlier than `0.8.0` requires using the EVM legacy assembly pipeline. This is in a highly experimental state.](https://github.com/paritytech/revive/issues/89)
 
