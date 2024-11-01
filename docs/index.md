@@ -15,7 +15,7 @@ contracts from YUL (EVM assembly) to RISC-V in order to run them using PolkaVM i
 To keep things simple for now you need to use our [REMIX](https://remix.polkadot.io) web frontend to compile
 your contracts to RISC-V and deploy them to Westend. Eventually, we will provide the tools to accomplish this process locally.
 
-In order to develop an App that interacts with your contract you can a Ethereum javascript library of your choice. We
+In order to develop an App that interacts with your contract you can use an Ethereum javascript library of your choice. We
 are using [`ethers.js`](https://ethers.org) in our tests which is the most popular library as of writing this.
 
 ## Contribute to this documentation
