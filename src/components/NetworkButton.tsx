@@ -13,7 +13,7 @@ type NetworkConfig = {
   currencySymbol: string
   iconUrls: string[]
   rpcUrls: string[]
-  blockExplorerUrls: string[]
+  blockExplorerUrls: string[] | null
 }
 
 async function addEthereumChain({
@@ -70,12 +70,13 @@ export const NetworkButton = (config: NetworkConfig) => {
       style={{
         backgroundImage: `url(/img/metamask.svg)`,
         backgroundRepeat: 'no-repeat',
-        fontSize: '16px',
+        fontSize: '14px',
         fontWeight: 'bold',
-        backgroundSize: '40px',
+        backgroundSize: '32px',
         backgroundPosition: '3px 50%',
         borderRadius: '9px',
-        padding: '15px 15px 15px 50px',
+        padding: '12px 12px 12px 40px',
+        marginBottom: '12px',
       }}
       onClick={() => addEthereumChain(config)}
     >
@@ -93,5 +94,17 @@ export const WestendNetworkButton = () => (
     iconUrls={['https://contracts.polkadot.io/img/ah.svg']}
     rpcUrls={['https://westend-asset-hub-eth-rpc.polkadot.io']}
     blockExplorerUrls={['https://assethub-westend.subscan.io']}
+  />
+)
+
+export const LocalNetworkButton = () => (
+  <NetworkButton
+    chainId="0x190f1b44"
+    chainName="Kitchensink Local Testnet"
+    currencyName="DEV"
+    currencySymbol="DEV"
+    iconUrls={[]}
+    rpcUrls={['http://localhost:8545']}
+    blockExplorerUrls={null}
   />
 )
