@@ -3,46 +3,23 @@ sidebar_position: 1
 slug: /deploy-your-first-contract
 ---
 
-import {NetworkButton} from '@site/src/components/NetworkButton';
+import {WestendNetworkButton} from '@site/src/components/NetworkButton';
 
-# Deploy and interact with your contract
+# Deploy your first contract
 
 This guide will walk you through deploying and interacting with contracts in REMIX.
 
 ## Deploy Your first contract
 
-1. Install MetaMask Wallet.
+1. Load and Compile a Contract.
 
-   Install the [MetaMask](https://support.metamask.io/getting-started/getting-started-with-metamask/#how-to-install-metamask) browser extension and create an Ethereum account. MetaMask will allow REMIX to interface with the Westend network.
-
-2. Connect your Metamask wallet to Asset-Hub using the following link:
-
-<NetworkButton
-chainId="0x190f1b45"
-chainName="Asset-Hub Westend Testnet"
-currencyName="Westies"
-currencySymbol="WND"
-iconUrls={["https://contracts.polkadot.io/img/ah.svg"]}
-rpcUrls={[ "https://westend-asset-hub-eth-rpc.polkadot.io" ]}
-blockExplorerUrls={["https://assethub-westend.subscan.io"]}
-/>
-
-3. Request Westend (WND) Tokens.
-
-   Open the [Westend Faucet](https://faucet.polkadot.io/westend?parachain=1000).
-
-   Enter your MetaMask address and click **Send** to request Westend tokens.
-
-4. Compile the Contract.
-
-   Open [REMIX IDE](https://remix.polkadot.io) in your browser.
-   By default, REMIX provides a sample workspace. Choose your Solidity contract (\*.sol file) and compile it by clicking the **▶️** button.
+   Open the [REMIX IDE](https://remix.polkadot.io).
+   By default, REMIX provides a sample workspace. Choose a Solidity contract to compile and click the **▶️** button.
+   Alternatively, use the **Solidity Compiler** tab to compile the selected contract.
 
    ![Compile contract](../../static/img/dapp_compile.jpeg)
 
-   Alternatively, use the **Solidity Compiler** tab for compilation.
-
-5. Deploy to Westend.
+2. Deploy to Westend.
 
    Confirm that the **Injected Provider - MetaMask** environment is selected in the **Deploy & Run** tab.
    When prompted, allow REMIX to connect to MetaMask. Your account address and balance will be displayed under the **ACCOUNT** section.

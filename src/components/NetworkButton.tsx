@@ -83,3 +83,15 @@ export const NetworkButton = (config: NetworkConfig) => {
     </button>
   )
 }
+
+export const WestendNetworkButton = () => (
+  <NetworkButton
+    chainId="0x190f1b45"
+    chainName="Asset-Hub Westend Testnet"
+    currencyName="Westies"
+    currencySymbol="WND"
+    iconUrls={['https://contracts.polkadot.io/img/ah.svg']}
+    rpcUrls={['https://westend-asset-hub-eth-rpc.polkadot.io']}
+    blockExplorerUrls={['https://assethub-westend.subscan.io']}
+  />
+)
