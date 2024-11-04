@@ -23,7 +23,7 @@ chainName="Asset-Hub Westend Testnet"
 currencyName="Westies"
 currencySymbol="WND"
 iconUrls={["https://contracts.polkadot.io/img/ah.svg"]}
-rpcUrls={[ "https://eth-rpc.parity-testnet.parity.io" ]}
+rpcUrls={[ "https://westend-asset-hub-eth-rpc.polkadot.io" ]}
 blockExplorerUrls={["https://assethub-westend.subscan.io"]}
 />
 
@@ -35,7 +35,7 @@ blockExplorerUrls={["https://assethub-westend.subscan.io"]}
 
 4. Compile the Contract.
 
-   Open [REMIX IDE](https://remix.polkadot.io) in your browser.
+   Open [REMIX IDE](https://remix.polkadot.io) in your browser. When prompted, allow REMIX to connect to MetaMask.
    By default, REMIX provides a sample workspace. Choose your Solidity contract (\*.sol file) and compile it by clicking the **▶️** button.
 
    ![Compile contract](../../static/img/dapp_compile.jpeg)
