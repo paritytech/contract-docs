@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+slug: /deploy-your-first-contract
 ---
 
 import {NetworkButton} from '@site/src/components/NetworkButton';
@@ -8,13 +9,13 @@ import {NetworkButton} from '@site/src/components/NetworkButton';
 
 This guide will walk you through deploying and interacting with contracts in REMIX.
 
-## Deploy Your Contract
+## Deploy Your first contract
 
 1. Install MetaMask Wallet.
 
    Install the [MetaMask](https://support.metamask.io/getting-started/getting-started-with-metamask/#how-to-install-metamask) browser extension and create an Ethereum account. MetaMask will allow REMIX to interface with the Westend network.
 
-2. Add Asset-Hub to your Metamask wallet, or switch to it if you have already added it.
+2. Connect your Metamask wallet to Asset-Hub using the following link:
 
 <NetworkButton
 chainId="0x190f1b45"
@@ -28,31 +29,20 @@ blockExplorerUrls={["https://assethub-westend.subscan.io"]}
 
 3. Request Westend (WND) Tokens.
 
-   Open the [Westend Faucet](https://faucet.polkadot.io/westend/assethub).
+   Open the [Westend Faucet](https://faucet.polkadot.io/westend?parachain=1000).
 
    Enter your MetaMask address and click **Send** to request Westend tokens.
 
-4. Launch REMIX.
+4. Compile the Contract.
 
    Open [REMIX IDE](https://remix.polkadot.io) in your browser.
-
-   Navigate to the **Deploy & Run** tab.
-
-   Select **Westend Testnet - MetaMask** environment.
-
-   ![Set environment](../../static/img/dapp_env.jpeg)
-
-   When prompted, allow REMIX to connect to MetaMask.
-
-5. Compile the Contract.
-
    By default, REMIX provides a sample workspace. Choose your Solidity contract (\*.sol file) and compile it by clicking the **▶️** button.
 
    ![Compile contract](../../static/img/dapp_compile.jpeg)
 
    Alternatively, use the **Solidity Compiler** tab for compilation.
 
-6. Deploy to Westend.
+5. Deploy to Westend.
 
    Confirm that the **Westend Testnet - MetaMask** environment is selected in the **Deploy & Run** tab.
 
