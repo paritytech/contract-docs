@@ -35,7 +35,7 @@ blockExplorerUrls={["https://assethub-westend.subscan.io"]}
 
 4. Compile the Contract.
 
-   Open [REMIX IDE](https://remix.polkadot.io) in your browser. When prompted, allow REMIX to connect to MetaMask.
+   Open [REMIX IDE](https://remix.polkadot.io) in your browser.
    By default, REMIX provides a sample workspace. Choose your Solidity contract (\*.sol file) and compile it by clicking the **▶️** button.
 
    ![Compile contract](../../static/img/dapp_compile.jpeg)
@@ -44,7 +44,8 @@ blockExplorerUrls={["https://assethub-westend.subscan.io"]}
 
 5. Deploy to Westend.
 
-   Confirm that the **Westend Testnet - MetaMask** environment is selected in the **Deploy & Run** tab.
+   Confirm that the **Injected Provider - MetaMask** environment is selected in the **Deploy & Run** tab.
+   When prompted, allow REMIX to connect to MetaMask. Your account address and balance will be displayed under the **ACCOUNT** section.
 
    ![Deploy contract](../../static/img/dapp_deploy.jpeg)
 
