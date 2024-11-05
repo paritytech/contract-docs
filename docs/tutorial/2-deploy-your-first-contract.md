@@ -1,49 +1,32 @@
 ---
 sidebar_position: 1
+slug: /deploy-your-first-contract
 ---
 
-# Deploy and interact with your contract
+import {WestendNetworkButton} from '@site/src/components/NetworkButton';
 
-This guide will walk you through deploying and interacting with your contract in REMIX.
+# Deploy your first contract
 
-## Deploy Your Contract
+This guide will walk you through deploying and interacting with contracts in REMIX.
 
-1. Install MetaMask Wallet.
+1. Request some test WND tokens.
 
-   Install the [MetaMask](https://support.metamask.io/getting-started/getting-started-with-metamask/#how-to-install-metamask) browser extension and create an Ethereum account. MetaMask will allow REMIX to interface with the Westend network.
-2. Launch REMIX.
+   You will need some test tokens to interact with the testnet.
+   You can request Westend tokens from the [Westend Faucet](https://faucet.polkadot.io/westend?parachain=1000).
+   Simply enter your MetaMask address and click **Send** to request Westend tokens.
 
-   Open [REMIX IDE](https://remix.polkadot.io) in your browser.
+1. Load and Compile a Contract.
 
-   Navigate to the **Deploy & Run** tab.
-
-   Select **Westend Testnet - MetaMask** environment.
-
-   ![Set environment](../../static/img/dapp_env.jpeg)
-
-   When prompted, allow REMIX to connect to MetaMask.
-3. Request Westend (WND) Tokens.
-
-   Open the [Westend Faucet](https://faucet.polkadot.io/westend).
-
-   Enter your Westend address.
-
-   ![Faucet](../../static/img/dapp_faucet.png)
-
-   Note that this requires a Westend address, while in Metamask, an Ethereum address has been created. REMIX maps your Ethereum address to a Westend address, which can be viewed in the **Deploy & Run** tab under **Account**.
-
-   ![SS58Address](../../static/img/dapp_ss58.jpeg)
-
-4. Compile the Contract.
-
-   By default, REMIX provides a sample workspace. Choose your Solidity contract (*.sol file) and compile it by clicking the **▶️** button.
+   Open the [REMIX IDE](https://remix.polkadot.io).
+   By default, REMIX provides a sample workspace. Choose a Solidity contract to compile and click the **▶️** button.
+   Alternatively, use the **Solidity Compiler** tab to compile the selected contract.
 
    ![Compile contract](../../static/img/dapp_compile.jpeg)
 
-   Alternatively, use the **Solidity Compiler** tab for compilation.
-5. Deploy to Westend.
+1. Deploy to Westend.
 
    Confirm that the **Westend Testnet - MetaMask** environment is selected in the **Deploy & Run** tab.
+   When prompted, allow REMIX to connect to MetaMask. Your account address and balance will be displayed under the **ACCOUNT** section.
 
    ![Deploy contract](../../static/img/dapp_deploy.jpeg)
 
@@ -64,6 +47,7 @@ This guide will walk you through deploying and interacting with your contract in
    ![Call contract](../../static/img/dapp_call.jpeg)
 
    You can interact with your contract by calling its methods from this section, with all transactions routed through MetaMask.
+
 2. Run Tests.
 
    Currently, REMIX supports JavaScript tests only.
@@ -87,17 +71,17 @@ To enable seamless interaction between REMIX IDE and your local development envi
 
 2. Run REMIXD
 
-    After installation, launch the REMIXD server by specifying the directory you want to share and the REMIX IDE URL. Replace `<YOUR_DIRECTORY>` with the path to your local project folder:
+   After installation, launch the REMIXD server by specifying the directory you want to share and the REMIX IDE URL. Replace `<YOUR_DIRECTORY>` with the path to your local project folder:
 
-    ```bash
-    remixd -s <YOUR_DIRECTORY> -u https://remix.polkadot.io
-    ```
+   ```bash
+   remixd -s <YOUR_DIRECTORY> -u https://remix.polkadot.io
+   ```
 
 3. Activate REMIXD plugin in REMIX
 
-    Go to the **Plugin Manager** tab. Find **REMIXD**, click **Activate**, and then select **Connect** to link your local directory with the IDE.
+   Go to the **Plugin Manager** tab. Find **REMIXD**, click **Activate**, and then select **Connect** to link your local directory with the IDE.
 
-    ![Enable REMIXD](../../static/img/dapp_remixd.jpeg)
+   ![Enable REMIXD](../../static/img/dapp_remixd.jpeg)
 
 ## Generate and Deploy DApp UI with Quick DApp Plugin
 
@@ -106,12 +90,15 @@ The Quick DApp plugin in REMIX simplifies the process of creating and deploying 
 1. Activate the Plugin
 
    Open REMIX IDE and navigate to the **Plugin Manager** tab. Search for **Quick DApp** and click **Activate**.
+
 2. Select Your Contract
 
    Choose the smart contract you want to deploy from the **Deploy & Run** tab. The plugin will automatically identify your contract and generate a corresponding UI.
+
 3. Configure the UI
 
    You can customize the UI components based on the functions of your smart contract. The plugin allows you to specify which functions to expose to the user interface.
+
 4. Deploy to Surge
 
    Once your UI is configured, click the **Deploy** button. The plugin will handle the deployment process to Surge, providing you with a public URL to access your DApp.

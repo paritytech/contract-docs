@@ -12,7 +12,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://paritytech.github.io',
+  url: 'https://contracts.polkadot.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -20,9 +20,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'paritytech', // Usually your GitHub org/user name.
-  projectName: 'contract-docs', // Usually your repo name.
-  trailingSlash: false,
-
+  projectName: 'contracts-docs', // Usually your repo name.
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
@@ -36,18 +34,24 @@ const config = {
 
   presets: [
     [
-      'classic',
-      ({
+      '@docusaurus/preset-classic',
+      {
         docs: {
           sidebarPath: './sidebars.js',
           routeBasePath: '/',
+          editUrl:
+          'https://github.com/paritytech/contract-docs/edit/master',
+          editLocalizedFiles: true,
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
-        pages: false,
+        pages: {
+        },
         blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
-      }),
+      },
     ],
   ],
 
