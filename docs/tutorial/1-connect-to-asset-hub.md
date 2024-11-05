@@ -25,19 +25,5 @@ Connect your Metamask wallet to Asset-Hub using the following link:
 - Block Explorer URL: `https://assethub-westend.subscan.io`
 </details>
 
-# Local development
-
-Connect your Metamask wallet to a local server using the following link:
-
-<LocalNetworkButton />
-
-<details>
-<summary>Or add it manually</summary>
-- Network name: Kitchensink local
-- RPC URL URL: `http://localhost:8545`
-- Chain ID: `420420420`
-- Currency Symbol: `DEV`
-</details>
-
 [add-network]: https://support.metamask.io/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc/#adding-a-network-manually
 [MetaMask]: https://support.metamask.io/getting-started/getting-started-with-metamask/#how-to-install-metamask
