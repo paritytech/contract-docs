@@ -38,7 +38,7 @@ RUST_LOG="error,evm=debug,sc_rpc_server=info,runtime::revive=debug" cargo run --
 
 ## Build and Run Eth RPC Proxy
 
-This RPC node translates Ethereum-compatible requests into Substrate-compatible requests.
+This RPC proxy translates Ethereum-compatible requests into Substrate-compatible requests.
 
 It acts as a bridge between Ethereum tools, like MetaMask and Remix, and the Substrate based network, enabling Ethereum applications to interact seamlessly with Substrate based chains by interpreting Ethereum RPC calls and routing them to the appropriate Substrate functions. This way, developers can work with familiar Ethereum-based tools.
 
