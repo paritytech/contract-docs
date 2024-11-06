@@ -36,7 +36,7 @@ cd polkadot-sdk
 RUST_LOG="error,evm=debug,sc_rpc_server=info,runtime::revive=debug" cargo run --bin substrate-node -- --dev
 ```
 
-## Build and Run Eth RPC Node
+## Build and Run Eth RPC Proxy
 
 This RPC node translates Ethereum-compatible requests into Substrate-compatible requests.
 
