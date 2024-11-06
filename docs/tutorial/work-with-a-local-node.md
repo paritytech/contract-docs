@@ -75,3 +75,5 @@ RUST_LOG="info,eth-rpc=debug" cargo run --bin eth-rpc -- --dev
 5. Select the pre-founded local account
 
 To compile and deploy your smart contract, refer to the [Deploying Your First Contract](./2-deploy-your-first-contract.md) tutorial, keeping the environment settings configured in this section.
+
+Note: When you restart the Kitchensink node, you will need to reset the nonce in MetaMask. To do this, go to **Settings -> Advanced** in MetaMask and select [**Clear activity tab data**](https://support.metamask.io/managing-my-wallet/resetting-deleting-and-restoring/how-to-clear-your-account-activity-reset-account/#to-reset-the-account).
