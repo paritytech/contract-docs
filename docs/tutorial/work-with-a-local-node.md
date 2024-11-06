@@ -1,13 +1,13 @@
 ---
-sidebar_position: 3
-slug: /work-in-local-environment
+sidebar_position: 4
+slug: /work-with-a-local-node
 ---
 
 import {LocalNetworkButton} from '@site/src/components/NetworkButton';
 
-# Work in Local Environment
+# Work with a Local Node
 
-This tutorial describes how to set up a local blockchain node and use it with REMIX.
+This tutorial describes how to set up a local node and use it with REMIX.
 
 ## Prerequisites
 
@@ -38,6 +38,10 @@ RUST_LOG="error,evm=debug,sc_rpc_server=info,runtime::revive=debug" cargo run --
 
 ## Build and Run Eth RPC Node
 
+This RPC node translates Ethereum-compatible requests into Substrate-compatible requests.
+
+It acts as a bridge between Ethereum tools, like MetaMask and Remix, and the Substrate based network, enabling Ethereum applications to interact seamlessly with Substrate based chains by interpreting Ethereum RPC calls and routing them to the appropriate Substrate functions. This way, developers can work with familiar Ethereum-based tools.
+
 Open another terminal window and navigate to the Eth RPC directory to start the Eth RPC node:
 
 ```bash
@@ -47,7 +51,7 @@ RUST_LOG="info,eth-rpc=debug" cargo run --bin eth-rpc -- --dev
 
 ## Metemask Configuration
 
-1. Import the following private key into MetaMask to access your pre-funded local account: `5fb92d6e98884f76de468fa3f6278f8807c48bebc13595d45af5bdc4da702133`
+1. Import the following private key into [MetaMask](https://support.metamask.io/managing-my-wallet/accounts-and-addresses/how-to-import-an-account/#importing-using-a-private-key) to access your pre-funded local account: `5fb92d6e98884f76de468fa3f6278f8807c48bebc13595d45af5bdc4da702133`
 
 2. Connect your Metamask wallet to a local server using the following link:
 
@@ -60,14 +64,14 @@ RUST_LOG="info,eth-rpc=debug" cargo run --bin eth-rpc -- --dev
 - Chain ID: `420420420`
 - Currency Symbol: `DEV`
 </details>
-3. Make sure that the **Kitchensink local** network is selected
+3. Make sure that the **Kitchensink Local Testnet** network is selected
 
 ## REMIX Setup
 
 1. Open the REMIX IDE.
 2. Navigate to the **Deploy & Run** tab. In the **Environment** dropdown, select **Customize this list...**.
 3. Enable **INJECTED PROVIDER - METAMASK** in the **Deploy using a Browser Extension** section.
-4. Select the pre-founded local account
-5. From the **Environment** dropdown, select the enabled **Injected Provider - MetaMask**.
+4. From the **Environment** dropdown, select the enabled **Injected Provider - MetaMask**.
+5. Select the pre-founded local account
 
-To compile and deploy your smart contract, refer to the tutorial on [Deploying Your First Contract](./2-deploy-your-first-contract.md).
+To compile and deploy your smart contract, refer to the [Deploying Your First Contract](./2-deploy-your-first-contract.md) tutorial, keeping the environment settings configured in this section.
