@@ -24,6 +24,12 @@ REMIX `0.54-dev`
 
 - UI Corruption: In some instances, users may experience UI corruption where elements do not render correctly. Reloading the REMIX IDE usually resolves these display issues.
 
+- Missing Injected Westend - MetaMask Environment: If the required environment is not present, reloading the REMIX IDE may resolve the issue.
+
+- Unable to Select Required Environment: Clear your browser's browsing data and disconnect REMIX from MetaMask in the ALL Permissions menu of MetaMask.
+
+- Transaction Fails or Resolve Stuck or Pending Transactions: Go to Settings -> Advanced in MetaMask and select [Clear activity tab data](https://support.metamask.io/managing-my-wallet/resetting-deleting-and-restoring/how-to-clear-your-account-activity-reset-account/#to-reset-the-account).
+
 ## Not Tested
 
 - Plugins Functionality: We have not yet conducted tests on the GitHub, DGIT DIFF, SOURCIFY, SWARM and IPFS plugins. Users should proceed with caution when using these features until further validation is completed.

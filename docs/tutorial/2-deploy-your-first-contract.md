@@ -1,15 +1,15 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 slug: /deploy-your-first-contract
 ---
 
 import {WestendNetworkButton} from '@site/src/components/NetworkButton';
 
-# Deploy your first contract
+# Deploy Your First Contract
 
 This guide will walk you through deploying and interacting with contracts in REMIX.
 
-1. Request some test WND tokens.
+1. Request some Test WND Tokens.
 
    You will need some test tokens to interact with the testnet.
    You can request Westend tokens from the [Westend Faucet](https://faucet.polkadot.io/westend?parachain=1000).
@@ -25,7 +25,7 @@ This guide will walk you through deploying and interacting with contracts in REM
 
 1. Deploy to Westend.
 
-   Confirm that the **Westend Testnet - MetaMask** environment is selected in the **Deploy & Run** tab.
+   Select **Westend Testnet - MetaMask** environment in the **Deploy & Run** tab.
    When prompted, allow REMIX to connect to MetaMask. Your account address and balance will be displayed under the **ACCOUNT** section.
 
    ![Deploy contract](../../static/img/dapp_deploy.jpeg)
