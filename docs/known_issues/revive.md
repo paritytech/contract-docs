@@ -25,4 +25,4 @@ resolc `0.1.0-dev.5`
 
 ## Wontfix
 
-Please consult the [compatibility documentation](../compatibility.md) to learn more about Solidity and EVM features likely to remain unsupported (and why they will not be supported).
+Please consult [differences to Ethereum](../differences_to_eth) to learn about fundamental differences Ethereum that will likely not change in the future.
