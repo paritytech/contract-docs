@@ -86,16 +86,8 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://discord.gg/bKza3GEBEA',
               },
             ],
           },
@@ -103,8 +95,12 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Github',
+                label: 'Documentation Repository',
                 href: 'https://github.com/paritytech/contract-docs',
+              },
+              {
+                label: 'File Bugs',
+                href: 'https://github.com/paritytech/contract-issues',
               },
             ],
           },
