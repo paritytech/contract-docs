@@ -1,6 +1,6 @@
 # Contracts Docs
 
-This is the documentation for smart contracts on AssetHub. It is built using Docusaurus.
+This is the documentation for smart contracts on AssetHub. It is built using Docusaurus. Master is deployed to: https://contracts.polkadot.io.
 
 ## Local Development
 
