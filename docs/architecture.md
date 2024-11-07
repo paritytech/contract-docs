@@ -10,7 +10,7 @@ Our smart contract solution contains the following components.
 
 This is the blockchain module which executes smart contracts. It adds a bunch of extrinsics and runtime APIs just as any
 other pallet. However, it also [adds logic](https://github.com/paritytech/polkadot-sdk/tree/master/substrate/frame/revive/src/evm)
-that allows the block chain to process Ethereum style transactions. Those special transactions are not submitted directly to the chain.
+that allows the block chain to process Ethereum-style transactions. Those special transactions are not submitted directly to the chain.
 Even though that would the theoretically possible.
 
 Instead, users (wallets, Dapps, ...) connect to a [proxy server](https://github.com/paritytech/polkadot-sdk/tree/master/substrate/frame/revive/rpc)
