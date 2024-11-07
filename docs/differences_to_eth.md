@@ -13,7 +13,7 @@ if at all.
 
 This is the most obvious difference from other Ethereum-compatible solutions. We don't actually use an EVM. Instead, we
 use our own VM, which is based on the RISC-V instruction set. This is not an issue for a typical Solidity developer. Our
-revive compiler maintains full Solidity support, including inline assembler.  However, any code that tries to download
+revive compiler maintains full Solidity support, including inline assembler. However, any code that tries to download
 the bytecode of a contract and inspect it will fail, as it would expect to find EVM bytecode. Luckily,
 applications usually just pass through the bytecode as an opaque blob.
 
