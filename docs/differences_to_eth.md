@@ -6,7 +6,7 @@ sidebar_position: 4
 
 We are trying to be as compatible with Ethereum as possible. This includes semantics for the contract code as well as the
 RPC endpoints of the node. However, fundamental design decisions lead to a necessary degree of incompatibility. We argue
-that these are a good trade-off for most applications, and only slight modifications to existing code are necessary,
+that this is a good trade-off for most applications, and only slight modifications to existing code are necessary,
 if at all.
 
 ## PolkaVM instead of EVM
