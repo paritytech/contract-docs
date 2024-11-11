@@ -21,22 +21,22 @@ This guide will walk you through deploying and interacting with contracts in REM
    By default, REMIX provides a sample workspace. Choose a Solidity contract to compile and click the **▶️** button.
    Alternatively, use the **Solidity Compiler** tab to compile the selected contract.
 
-   ![Compile contract](../../static/img/dapp_compile.jpeg)
+   ![Compile contract](img/dapp_compile.jpeg)
 
 1. Deploy to Westend.
 
    Select **Westend Testnet - MetaMask** environment in the **Deploy & Run** tab.
    When prompted, allow REMIX to connect to MetaMask. Your account address and balance will be displayed under the **ACCOUNT** section.
 
-   ![Deploy contract](../../static/img/dapp_deploy.jpeg)
+   ![Deploy contract](img/dapp_deploy.jpeg)
 
    Click **Deploy** and **Confirm** the transaction in MetaMask.
 
-   ![Confirm transaction](../../static/img/dapp_metamask_deploy.jpeg)
+   ![Confirm transaction](img/dapp_metamask_deploy.jpeg)
 
    Wait for the deployment to complete, as indicated in the terminal panel.
 
-   ![Terminal panel](../../static/img/dapp_terminal.png)
+   ![Terminal panel](img/dapp_terminal.png)
 
 ## Interact with Your Deployed Contract
 
@@ -44,7 +44,7 @@ This guide will walk you through deploying and interacting with contracts in REM
 
    Once deployed, your contract will appear in the **Deployed/Unpinned Contracts** section of the **Deploy & Run** tab.
 
-   ![Call contract](../../static/img/dapp_call.jpeg)
+   ![Call contract](img/dapp_call.jpeg)
 
    You can interact with your contract by calling its methods from this section, with all transactions routed through MetaMask.
 
@@ -53,7 +53,7 @@ This guide will walk you through deploying and interacting with contracts in REM
    Currently, REMIX supports JavaScript tests only.
    To run tests, navigate to the **File Explorer** and select any JavaScript test file in the **tests** directory.
 
-   ![Test contract](../../static/img/dapp_test.jpeg)
+   ![Test contract](img/dapp_test.jpeg)
 
    Run it by clicking the **▶️** button.
 
@@ -81,7 +81,7 @@ To enable seamless interaction between REMIX IDE and your local development envi
 
    Go to the **Plugin Manager** tab. Find **REMIXD**, click **Activate**, and then select **Connect** to link your local directory with the IDE.
 
-   ![Enable REMIXD](../../static/img/dapp_remixd.jpeg)
+   ![Enable REMIXD](img/dapp_remixd.jpeg)
 
 ## Generate and Deploy DApp UI with Quick DApp Plugin
 
