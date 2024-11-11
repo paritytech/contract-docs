@@ -5,11 +5,11 @@ sidebar_position: 1
 # Intro
 
 This documentation teaches you everything you need to know about smart contracts on
-Polkadot AssetHub. The feature is a work in progress. A preview version is deployed to the Westend AssetHub
+Polkadot Asset Hub. The feature is a work in progress. A preview version is deployed to the Westend Asset Hub
 to gather feedback during development.
 
 Our solution is Ethereum-compatible: You can write your contracts in Solidity and interact with the node
-using Ethereum JSON RPC alongside an Ethereum wallet like Metamask. Under the hood, we recompile the
+using Ethereum JSON RPC alongside an Ethereum wallet like MetaMask. Under the hood, we recompile the
 contracts from YUL (EVM assembly) to RISC-V to run them using PolkaVM instead of EVM.
 
 To keep things simple for now, you need to use our [REMIX](https://remix.polkadot.io) web frontend to compile
