@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Things to Try Out
 
-If you’ve mastered the tutorial, here are a few things we think you could try and let us know how it went.
+If you’ve mastered the tutorial, here are a few things we think you could try. Afterwards, let us know how it went.
 
 ## Download Contract Code from REMIX
 
