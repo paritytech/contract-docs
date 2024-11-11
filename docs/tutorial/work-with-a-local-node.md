@@ -33,7 +33,7 @@ To build and run the Kitchensink node, use the following command:
 
 ```bash
 cd polkadot-sdk
-RUST_LOG="error,evm=debug,sc_rpc_server=info,runtime::revive=debug" cargo run --bin substrate-node -- --dev
+RUST_LOG="error,evm=debug,sc_rpc_server=info,runtime::revive=debug" cargo run --release --bin substrate-node -- --dev
 ```
 
 ## Build and Run Eth RPC Proxy
@@ -46,7 +46,7 @@ Open another terminal window and navigate to the Eth RPC directory to start the 
 
 ```bash
 cd polkadot-sdk/substrate/frame/revive/rpc
-RUST_LOG="info,eth-rpc=debug" cargo run --bin eth-rpc -- --dev
+RUST_LOG="info,eth-rpc=debug" cargo run --release --bin eth-rpc -- --dev
 ```
 
 ## Metemask Configuration
