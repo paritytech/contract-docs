@@ -61,15 +61,28 @@ This guide will walk you through deploying and interacting with contracts in REM
 
 To enable seamless interaction between REMIX IDE and your local development environment, you can connect to your filesystem using the REMIXD tool. This allows you to easily manage and edit your smart contract files directly from REMIX IDE. Follow these steps to establish the connection.
 
-1. Install REMIXD
+1. Install Node
 
-   To get started, install the REMIXD tool globally on your machine by running the following command in your terminal:
+   As a prerequisite install Node, e.g., using [Volta](https://volta.sh/) (which will also install `npm`):
+
+   ```bash
+   # install Volta
+   curl https://get.volta.sh | bash
+
+   # install Node
+   volta install node
+   ```
+
+
+2. Install REMIXD
+
+   Install the REMIXD tool globally on your machine by running the following command in your terminal:
 
    ```bash
    npm install -g @remix-project/remixd
    ```
 
-2. Run REMIXD
+3. Run REMIXD
 
    After installation, launch the REMIXD server by specifying the directory you want to share and the REMIX IDE URL. Replace `<YOUR_DIRECTORY>` with the path to your local project folder:
 
@@ -77,7 +90,7 @@ To enable seamless interaction between REMIX IDE and your local development envi
    remixd -s <YOUR_DIRECTORY> -u https://remix.polkadot.io
    ```
 
-3. Activate REMIXD plugin in REMIX
+4. Activate REMIXD plugin in REMIX
 
    Go to the **Plugin Manager** tab. Find **REMIXD**, click **Activate**, and then select **Connect** to link your local directory with the IDE.
 
