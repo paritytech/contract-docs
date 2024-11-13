@@ -141,6 +141,7 @@ Using Node.js, Deno, or Bun, you can compile your contract to Polkavm bytecode u
 Once compiled, you can deploy your contract, as shown below.
 
 ```ts
+import { ContractFactory } from 'ethers'
 import { compile } from '@parity/revive'
 
 // Compile the solidity contract to Polkavm bytecode.
@@ -180,7 +181,7 @@ try {
 Once you have deployed a contract, you can call its methods.
 
 ```ts
-import { TransactionResponse } from 'ethers'
+import { Contract, TransactionResponse } from 'ethers'
 try {
   const contract = new Contract(address, abi, signer)
   const tx = (await contract.myMethod()) as TransactionResponse
