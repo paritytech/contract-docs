@@ -7,8 +7,6 @@ import {WestendNetworkButton, LocalNetworkButton} from '@site/src/components/Net
 
 # Connect to Asset Hub
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mO0P-f8WmAo?si=YXi-xySRKBzh4gGS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 Install the [MetaMask] browser extension, and click on the button below to connect to a network.
 Alternatively, you can [manually add a custom network][add-network] using the settings provided below.
 
