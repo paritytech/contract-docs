@@ -68,7 +68,6 @@ try {
   // signer = await provider.getSigner(1) // Get the 2nd account
   // signer = await provider.getSigner("0x..") // Get the account with the specified address
 
-  // get the signer's address
   console.log(`Signer: ${signer.address}`)
 
   // get the signer's nonce
@@ -79,7 +78,7 @@ try {
 }
 ```
 
-To revokes previously granted permissions, call:
+To revokes previously granted permissions, use the following method:
 See [MetaMask's documentation](https://docs.metamask.io/wallet/reference/json-rpc-methods/wallet_revokepermissions) for more information.
 
 ```ts
@@ -111,6 +110,11 @@ On the server side, you can use a `Wallet` to sign transactions.
 import { Wallet } from 'ethers'
 
 const signer = new Wallet(privateKey, provider)
+console.log(`Signer: ${signer.address}`)
+
+// get the signer's nonce
+const nonce = await signer.getNonce()
+console.log(`Nonce: ${nonce}`)
 ```
 
 ### Transfer some balance
