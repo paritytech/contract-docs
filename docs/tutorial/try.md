@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Things to Try Out
 
-If you’ve mastered the tutorial, here are a few things we think you could try and let us know how it went.
+If you’ve mastered the tutorial, here are a few things we think you could try. Afterwards, let us know how it went.
 
 ## Download Contract Code from REMIX
 
@@ -91,7 +91,7 @@ signed. The sender of the extrinsic is determined by recovering the public key f
 
 ### Decode the Contract Code
 
-You’ll notice that the `to` field is missing in this example. This indicates that it will instantiate a new contract rather than calling
+You’ll notice that the `to` field is missing in this example. This indicates that it will instantiate a new contract rather than call
 an existing one. This also explains why the `data` field is so large: it contains the contract code. The format is the same as on Ethereum:
 `code ++ constructor_args`, where `++` denotes concatenation. The only difference is that `code` is a PolkaVM module and not EVM bytecode. You can use
 `xxd` and `polkatool` as we learned [above](#download-contract-code-from-remix) to examine the code. Just keep in mind that you need to remove any trailing `constructor_args` if
@@ -116,7 +116,7 @@ extrinsics. We’re using the `1_Storage.sol` example contract here, which you c
 
 When registering, you will sign the transaction with a Polkadot native wallet and signature scheme, likely even a pre-existing
 account. To use a Polkadot native wallet, you need to register (or "map") your account with `pallet_revive`. This is a one-time
-action and is necessary to enable mapping between the AssetHub native and Ethereum addresses. Ethereum wallets don't require any registration.
+action and is necessary to enable mapping between the Asset Hub-native and Ethereum addresses. Ethereum wallets don't require any registration.
 
 1. Go to Polkadot.js Apps, connect to Westend AssetHub, and go to the `Developer -> Extrinsics` tab.
 [Here](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fwestend-asset-hub-rpc.polkadot.io#/extrinsics) is a direct link.
@@ -148,7 +148,7 @@ is four bytes and derived by hashing the function signature. The easiest way to 
 A dry run means asking your node to run a contract call locally, which tells you how many resources it consumed, among other information. Wallets do this
 to suggest a `gas_limit` and estimate a fee. To perform a dry run manually, navigate to `Developer -> Runtime calls` in Polkadot.js Apps.
 Then select `reviveApi::call`. You will see that the arguments are identical to those in the extrinsic above, except the resource limits are optional.
-You can leave them unspecified, as you’re calling this function specifically to learn which values to specify.
+You can leave them unspecified, as you’re calling this function explicitly to learn which values to specify.
 ![Dry Run](img/dry_run.png)
 
 I filled out the fields with values from REMIX. The input data specifies calling the function `store_value(42)`. The function selector is `0x0fe08b3e`, and the rest
@@ -200,5 +200,5 @@ sense for a function that mutates state. Usually, only view functions like `retr
 
 Some ideas:
 
-* Use the information gained from the dry run to submit a `store_value` extrinsic. The dry run itself doesn't mutate any state, as every state change it does is discarded.
+* Use the information gained from the dry run to submit a `store_value` extrinsic. The dry run itself doesn't mutate any state, as every state change it performs is discarded.
 * Use the dry run to execute the `retrieve` message and check whether the value is properly set.

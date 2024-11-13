@@ -25,4 +25,4 @@ resolc `0.1.0-dev.5`
 
 ## Wontfix
 
-Please consult [differences to Ethereum](../differences_to_eth) to learn about fundamental differences Ethereum that will likely not change in the future.
+Please consult [differences to Ethereum](../differences_to_eth) to learn about fundamental differences within Ethereum that will likely not change in the future.
