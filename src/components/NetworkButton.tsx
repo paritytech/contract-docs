@@ -27,7 +27,7 @@ async function addEthereumChain({
 }: NetworkConfig) {
   const ethereum = window.ethereum
   if (!ethereum) {
-    alert('Please install MetaMask!')
+    alert('Please install MetaMask, or if it is already installed, reload the page.')
     return
   }
 
@@ -38,7 +38,7 @@ async function addEthereumChain({
       params: [{ chainId }],
     })
   } catch (error) {
-    console.log("failed to switch network, let's add the network")
+    console.log("Failed to switch network, let's add the network.")
   }
 
   try {
