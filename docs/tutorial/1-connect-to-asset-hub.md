@@ -15,6 +15,7 @@ Alternatively, you can [manually add a custom network][add-network] using the se
 Connect your MetaMask wallet to Asset Hub using the following link:
 
 <WestendNetworkButton />
+<br /><sub><sup>(Reload the page if the link does not work)</sup></sub>
 
 <details>
 <summary>Or add it manually</summary>
