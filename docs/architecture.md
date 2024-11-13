@@ -19,7 +19,7 @@ as a server and connects to the node as a network client. It repackages the Ethe
 [special dispatchable](https://github.com/paritytech/polkadot-sdk/blob/2700dbf2dda8b7f593447c939e1a26dacdb8ce45/substrate/frame/revive/src/lib.rs#L759-L784)
 while leaving the payload untouched. It is up to the logic mentioned above to decode the Ethereum transaction and transform it into
 something that `pallet-revive` can understand. By submitting the Ethereum transaction's payload verbatim to the block we make it easy to adapt
-tooling (e.g block explorers) which don't need to deal with a different transaction format.
+tooling (e.g. block explorers) which don't need to deal with a different transaction format.
 
 The choice of using a standalone proxy is intentional: Adding new endpoints to the node binary would require alternative clients to implement them
 as well. This is why we chose this approach that requires zero changes to the client.
