@@ -9,12 +9,6 @@ import {WestendNetworkButton} from '@site/src/components/NetworkButton';
 
 This guide will walk you through deploying and interacting with contracts in REMIX.
 
-1. Request some Test WND Tokens.
-
-   You will need some test tokens to interact with the testnet.
-   You can request Westend tokens from the [Westend Faucet](https://faucet.polkadot.io/westend?parachain=1000).
-   Simply enter your MetaMask address and click **Send** to request Westend tokens.
-
 1. Load and Compile a Contract.
 
    Open the [REMIX IDE](https://remix.polkadot.io).
