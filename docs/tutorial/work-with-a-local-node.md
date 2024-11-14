@@ -29,7 +29,7 @@ git clone https://github.com/paritytech/polkadot-sdk
 
 ## Build and Run the Kitchensink Node
 
-To build and run the Kitchensink node, use the following command inside the just cloned repo:
+To build and run the Kitchensink node, use the following command inside the just-cloned repo:
 
 ```bash
 RUST_LOG="error,evm=debug,sc_rpc_server=info,runtime::revive=debug" cargo run --release --bin substrate-node -- --dev
@@ -39,7 +39,7 @@ RUST_LOG="error,evm=debug,sc_rpc_server=info,runtime::revive=debug" cargo run --
 
 This RPC proxy translates Ethereum-compatible requests into Substrate-compatible requests.
 
-It acts as a bridge between Ethereum tools, like MetaMask and Remix, and the Substrate based network, enabling Ethereum applications to interact seamlessly with Substrate based chains by interpreting Ethereum RPC calls and routing them to the appropriate Substrate functions. This way, developers can work with familiar Ethereum-based tools.
+It acts as a bridge between Ethereum tools, like MetaMask and Remix, and the Substrate-based network, enabling Ethereum applications to interact seamlessly with Substrate-based chains by interpreting Ethereum RPC calls and routing them to the appropriate Substrate functions. This way, developers can work with familiar Ethereum-based tools.
 
 Open another terminal window and run the Eth RPC proxy from the same directory:
 
@@ -51,7 +51,7 @@ RUST_LOG="info,eth-rpc=debug" cargo run --release -p pallet-revive-eth-rpc -- --
 
 1. Import the following private key into [MetaMask](https://support.metamask.io/managing-my-wallet/accounts-and-addresses/how-to-import-an-account/#importing-using-a-private-key) to access your pre-funded local account: `5fb92d6e98884f76de468fa3f6278f8807c48bebc13595d45af5bdc4da702133`
 
-2. Connect your Metamask wallet to a local server using the following link:
+2. Connect your MetaMask wallet to a local server using the following link:
 
 <LocalNetworkButton />
 
