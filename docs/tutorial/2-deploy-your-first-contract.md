@@ -112,6 +112,16 @@ The Quick DApp plugin in REMIX simplifies the process of creating and deploying 
 
    You can customize the UI components based on the functions of your smart contract. The plugin allows you to specify which functions to expose to the user interface.
 
-4. Deploy to Surge
+4. Setup Surge
+
+   ```bash
+   # install surge
+   npm install --global surge
+
+   # create login
+   surge login
+   ```
+
+5. Deploy to Surge
 
    Once your UI is configured, click the **Deploy** button. The plugin will handle the deployment process to Surge, providing you with a public URL to access your DApp.
