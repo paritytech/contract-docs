@@ -9,12 +9,6 @@ import {WestendNetworkButton} from '@site/src/components/NetworkButton';
 
 This guide will walk you through deploying and interacting with contracts in REMIX.
 
-1. Request some Test WND Tokens.
-
-   You will need some test tokens to interact with the testnet.
-   You can request Westend tokens from the [Westend Faucet](https://faucet.polkadot.io/westend?parachain=1000).
-   Simply enter your MetaMask address and click **Send** to request Westend tokens.
-
 1. Load and Compile a Contract.
 
    Open the [REMIX IDE](https://remix.polkadot.io).
@@ -23,7 +17,7 @@ This guide will walk you through deploying and interacting with contracts in REM
 
    ![Compile contract](img/dapp_compile.jpeg)
 
-1. Deploy to Westend.
+2. Deploy to Westend.
 
    Select **Westend Testnet - MetaMask** environment in the **Deploy & Run** tab.
    When prompted, allow REMIX to connect to MetaMask. Your account address and balance will be displayed under the **ACCOUNT** section.
@@ -72,7 +66,6 @@ To enable seamless interaction between REMIX IDE and your local development envi
    # install Node
    volta install node
    ```
-
 
 2. Install REMIXD
 
