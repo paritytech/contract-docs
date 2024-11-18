@@ -17,7 +17,7 @@ This guide will walk you through deploying and interacting with contracts in REM
 
    ![Compile contract](img/dapp_compile.jpeg)
 
-1. Deploy to Westend.
+2. Deploy to Westend.
 
    Select **Westend Testnet - MetaMask** environment in the **Deploy & Run** tab.
    When prompted, allow REMIX to connect to MetaMask. Your account address and balance will be displayed under the **ACCOUNT** section.
@@ -66,7 +66,6 @@ To enable seamless interaction between REMIX IDE and your local development envi
    # install Node
    volta install node
    ```
-
 
 2. Install REMIXD
 
