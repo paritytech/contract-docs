@@ -40,10 +40,6 @@ If you prefer working with contracts on your local filesystem, Remix can connect
 
 ![Download workspace](img/download.png)
 
-Note that switching to a local filesystem will cause all previously deployed contracts, both pinned and unpinned, to become invisible in the **Deploy & Run** tab. If you need to interact with already deployed contracts, make sure to note down their addresses beforehand so you can load them later using the **At Address** button.
-
-![Load contract](img/load_contract.png)
-
 To enable seamless integration between Remix IDE and your local development environment use the remixd tool. This allows you to easily manage and edit your smart contract files directly from Remix IDE. Follow these steps to establish the connection.
 
 1. Install Node

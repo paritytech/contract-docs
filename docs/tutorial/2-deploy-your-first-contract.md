@@ -35,7 +35,7 @@ This guide will walk you through deploying and interacting with contracts in REM
 1. Interact with Deployed Contracts.
 
    Once deployed, your contract will appear in the **Deployed/Unpinned Contracts** section of the **Deploy & Run** tab.
-   To keep your contract visible after reloading Remix, pin it to the workspace. Pinning a contract moves it to the Pinned Contracts section, ensuring it won't disappear upon reload. When pinned, Remix will save both the contract’s address and its ABI for easy access.
+   To keep your contract visible after reloading Remix, pin it to the workspace. Pinning a contract moves it to the **Pinned Contracts** section, ensuring it won't disappear upon reload. When pinned, Remix will save both the contract’s address and its ABI for easy access.
 
    ![Pin contract](img/pin.png)
 
@@ -51,3 +51,9 @@ This guide will walk you through deploying and interacting with contracts in REM
    ![Test contract](img/dapp_test.jpeg)
 
    Run it by clicking the **▶️** button.
+
+## How to Interact with Already Deployed Contracts
+
+   If you need to interact with already deployed contracts, make sure to note down their addresses beforehand so you can load them later using the **At Address** button.
+
+   ![Load contract](img/load_contract.png)
