@@ -10,7 +10,7 @@ to gather feedback during development.
 
 Our solution is Ethereum-compatible: You can write your contracts in Solidity and interact with the node
 using Ethereum JSON RPC alongside an Ethereum wallet like MetaMask. Under the hood, we recompile the
-contracts from YUL (EVM assembly) to RISC-V to run them using PolkaVM instead of EVM.
+contracts from YUL (EVM assembly) to RISC-V to run them using [PolkaVM](https://wiki.polkadot.network/docs/learn-jam-chain#polkadot-virtual-machine-pvm) instead of EVM.
 
 To keep things simple for now, you need to use our [REMIX](https://remix.polkadot.io) web frontend to compile
 your contracts to RISC-V and deploy them to Westend. Eventually, we will provide tools to accomplish this process locally.

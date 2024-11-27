@@ -143,15 +143,21 @@ Once compiled, you can deploy your contract, as shown below.
 ```ts
 import { ContractFactory } from 'ethers'
 import { compile } from '@parity/revive'
+import { readFileSync } from 'fs'
 
-// Compile the solidity contract to Polkavm bytecode.
+// Update the following two based on your contract. Ensure `ContractName` is same as defined in `*.sol`.
 const contract = './path/MyContract.sol'
 const contractName = 'MyContract'
+// Compile the solidity contract to Polkavm bytecode.
 const res = await compile({
   [contract]: {
     content: readFileSync(contract, 'utf8'),
   },
 })
+
+// print list of contract paths and names.
+console.log('Contracts compiled:')
+console.log(Object.keys(res.contracts))
 
 // Get the contract's abi and bytecode.
 const {
