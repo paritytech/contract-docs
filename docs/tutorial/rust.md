@@ -22,11 +22,12 @@ how to call this contract.
 
 ## Deploy the template
 
-You can use ether.js to deploy the Rust contract. We [covered that](/getting-started-with-ethers.js#deploy-a-contract)
-earlier in the tutorial. You skip the compilation step and pass the raw `contract.polkavm` as bytecode:
+You can use [ether.js](https://www.npmjs.com/package/ethers) to deploy the Rust contract.
+Pass the raw `contract.polkavm` as bytecode:
 
 ```ts
 import { ContractFactory } from 'ethers'
+import { readFileSync } from 'fs'
 
 /// We specify the abi manually since the Rust compiler won't generate one for us
 const abi = ["constructor()", "function fibonacci(uint) view returns(uint)"];
