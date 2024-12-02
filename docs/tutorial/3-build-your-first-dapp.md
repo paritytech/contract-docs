@@ -3,7 +3,7 @@ sidebar_position: 3
 slug: /build-your-first-dapp
 ---
 
-## Build Your First Dapp
+# Build Your First Dapp
 
 To get started with building a Decentralized Application (Dapp), clone the following repository and follow the README instructions: [https://github.com/paritytech/contracts-boilerplate](https://github.com/paritytech/contracts-boilerplate).
 
