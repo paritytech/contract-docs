@@ -62,6 +62,13 @@ REMIX `0.54-dev`
 
 - Transaction Fails or Resolve Stuck or Pending Transactions: Go to Settings -> Advanced in MetaMask and select [Clear activity tab data](https://support.metamask.io/managing-my-wallet/resetting-deleting-and-restoring/how-to-clear-your-account-activity-reset-account/#to-reset-the-account).
 
+## JSON-RPC
+
+### Missing features
+
+- The list of supported methods is [here](https://github.com/paritytech/polkadot-sdk/blob/master/substrate/frame/revive/rpc/src/rpc_methods_gen.rs); notably, `eth_trace` endpoints are not supported yet.
+- EVM transaction have a transaction hash that is different from the Substrate transaction hash, as a consequence, it does work out of the box with Substrate block explorers, this is a known issue and will be fixed in the near future.
+
 ### Not Tested
 
 - Plugins Functionality: We have not yet conducted tests on the GitHub, DGIT DIFF, SOURCIFY, SWARM and IPFS plugins. Users should proceed with caution when using these features until further validation is completed.
