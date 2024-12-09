@@ -3,19 +3,19 @@ sidebar_position: 1
 slug: /connect-to-asset-hub
 ---
 
-import {WestendNetworkButton, LocalNetworkButton} from '@site/src/components/NetworkButton';
+import {WalletConnectButton} from '@site/src/components/WalletConnect'
 
 # Connect to Asset Hub
 
-Install the [MetaMask] browser extension, create a new account (if you don’t already have one), and click on the button below to connect to a network.
-Alternatively, you can [manually add a custom network][add-network] using the settings provided below.
+- Install an Ethereum wallet of your choice, such as the [MetaMask] browser extension.
+- Create a new account (if you don’t already have one), and click on the button below to connect to a network.
 
 # Connect to Asset Hub Westend Testnet
 
 Connect your MetaMask wallet to Asset Hub using the following link:
 
-<WestendNetworkButton />
-<br /><sub><sup>(Reload the page if the link does not work)</sup></sub>
+<WalletConnectButton />
+<br /><sub><sup>(Try reloading the page if the link does not work)</sup></sub>
 
 <details>
 <summary>Or add it manually</summary>
@@ -24,9 +24,12 @@ Connect your MetaMask wallet to Asset Hub using the following link:
 - Chain ID: `420420421`
 - Currency Symbol: `WND`
 - Block Explorer URL: `https://assethub-westend.subscan.io`
+
+For MetaMask see this guide for [manually adding a custom network][add-network] using the settings provided above.
+
 </details>
 
-# Request some Test WND Tokens.
+# Request some Test WND Tokens
 
 You will need some test tokens to interact with the testnet.
 You can request Westend tokens from the [Westend Faucet](https://faucet.polkadot.io/westend?parachain=1000).
