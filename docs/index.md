@@ -20,7 +20,7 @@ are using [`ethers.js`](https://ethers.org) in our tests, which is the most popu
 
 ## Get in Touch
 
-If you’d like to talk to us, please join [our Discord](https://discord.gg/bKza3GEBEA) and say hello.
+If you’d like to talk to us, please join [Polkadot Discord](https://discord.gg/polkadot), find our support channel under `Technical -> solidity-smart-contracts` and say hello.
 This is also where we handle support questions. If you found a bug, please [report it](https://github.com/paritytech/contract-issues),
 but make sure to check the [known issues](/known_issues) first.
 
