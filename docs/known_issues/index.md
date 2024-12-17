@@ -67,7 +67,7 @@ REMIX `0.54-dev`
 ### Missing features
 
 - The list of supported methods is [here](https://github.com/paritytech/polkadot-sdk/blob/master/substrate/frame/revive/rpc/src/rpc_methods_gen.rs); notably, `eth_trace` endpoints are not supported yet.
-- EVM transaction have a transaction hash that is different from the Substrate transaction hash, as a consequence, it does work out of the box with Substrate block explorers, this is a known issue and will be fixed in the near future.
+- EVM transaction have a transaction hash that is different from the Substrate transaction hash, as a consequence, it does not work out of the box with Substrate block explorers, this is a known issue and will be fixed in the near future.
 
 ### Not Tested
 
