@@ -10,7 +10,7 @@ Polkadot.
 :::info
 
 **The feature is a work in progress**. A preview version is deployed to the [Westend Asset Hub](https://wiki.polkadot.network/docs/maintain-networks#westend-asset-hub)
-to gather feedback during development. This documentation will also be moved to the official Polkadot Wiki once the feature is stable.
+to gather feedback during development. This documentation will also be moved to the official Polkadot documentation once the feature is stable.
 
 :::
 
