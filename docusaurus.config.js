@@ -87,7 +87,7 @@ const config = {
             items: [
               {
                 label: 'Discord',
-                href: 'https://discord.gg/bKza3GEBEA',
+                href: 'https://discord.gg/polkadot',
               },
             ],
           },
