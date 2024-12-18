@@ -11,6 +11,14 @@ const config = {
   title: 'Contracts',
   favicon: 'img/favicon.ico',
 
+  // Add this scripts configuration
+  scripts: [
+    {
+      src: 'https://apisa.parity.io/latest.js',
+      'data-nscript': 'afterInteractive',
+    },
+  ],
+
   // Set the production url of your site here
   url: 'https://contracts.polkadot.io',
   // Set the /<baseUrl>/ pathname under which your site is served
