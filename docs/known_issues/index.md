@@ -15,17 +15,15 @@ The following compiler issues are known and we are working on it. Please do not 
 
 ### Release
 
-resolc `0.1.0-dev.6`
+resolc `0.1.0-dev.7`
 
 ### Missing features
 
 - [Libraries with public functions are not supported](https://github.com/paritytech/revive/issues/91)
 - [Automatic import resolution is not supported](https://github.com/paritytech/revive/issues/98)
 - The emulated EVM linear contract memory is limited to 64kb in size. Will be fixed with support for metered dynamic memory.
-- [The contract calldata is currently limited to 1kb in size](https://github.com/paritytech/revive/issues/57)
+- [Gas limits for contract calls are ignored](https://github.com/paritytech/revive/issues/117)
 - [EIP-4844 opcodes are not supported](https://github.com/paritytech/revive/issues/64)
-- [Gas limits for contract calls are ignored](https://github.com/paritytech/revive/issues/60)
-- [Gas related opcodes are not supported](https://github.com/paritytech/revive/issues/60)
 - IPFS metadata hashes are not supported
 - [Compiled contract artifacts can exceed the pallet static memory limit and fail to deploy](https://github.com/paritytech/revive/issues/96).
 - [Compiling contracts requiring `solc` version earlier than `0.8.0` requires using the EVM legacy assembly pipeline. This is in a highly experimental state.](https://github.com/paritytech/revive/issues/89)
