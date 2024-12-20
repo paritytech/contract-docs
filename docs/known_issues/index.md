@@ -22,6 +22,7 @@ resolc `0.1.0-dev.7`
 - [Libraries with public functions are not supported](https://github.com/paritytech/revive/issues/91)
 - [Automatic import resolution is not supported](https://github.com/paritytech/revive/issues/98)
 - The emulated EVM linear contract memory is limited to 64kb in size. Will be fixed with support for metered dynamic memory.
+- [Gas limits for contract calls are ignored](https://github.com/paritytech/revive/issues/117)
 - [EIP-4844 opcodes are not supported](https://github.com/paritytech/revive/issues/64)
 - IPFS metadata hashes are not supported
 - [Compiled contract artifacts can exceed the pallet static memory limit and fail to deploy](https://github.com/paritytech/revive/issues/96).
