@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Intro
 
-:::info
+:::warning
 
 **The feature is a work in progress**. A preview version is deployed to the [Westend Asset Hub Parachain](https://wiki.polkadot.network/docs/maintain-networks#westend-asset-hub)
 to gather feedback during development. **This documentation is also temporary and will be moved to [docs.polkadot.com](https://docs.polkadot.com/) in 2025 once the feature is in production.**
