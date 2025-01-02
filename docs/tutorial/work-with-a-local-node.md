@@ -25,7 +25,12 @@ Open your terminal and run the following commands to clone the Polkadot SDK repo
 
 ```bash
 git clone https://github.com/paritytech/polkadot-sdk
+cd polkadot-sdk
+git checkout d1d92ab76004ce349a97fc5d325eaf9a4a7101b7
 ```
+
+The commit references the version that is currently deployed to Westend AssetHub. If you use a different commit the node might be incompatible with
+the deployed REMIX version. This is only necessary until we stablized our API. From then on `master` will be backwards compatible.
 
 ## Build and Run the Kitchensink Node
 
