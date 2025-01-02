@@ -7,13 +7,14 @@ import {LocalNetworkButton} from '@site/src/components/NetworkButton';
 
 # Work with a Local Node
 
-This tutorial describes how to set up a local node and use it with REMIX.
+This tutorial describes how to set up a local node and use it with REMIX. Running a local node allows you to observe the logs
+it emits.
 
 ## Prerequisites
 
 Before you begin, ensure you have the following:
 
-- **MetaMask**: Install the MetaMask browser extension. This will allow you to interact with your local blockchain.
+- **MetaMask**: Install the MetaMask browser extension. This will allow you to interact with your local node.
 
 ## Install Dependencies
 
@@ -39,6 +40,14 @@ To build and run the Kitchensink node, use the following command inside the just
 ```bash
 RUST_LOG="error,evm=debug,sc_rpc_server=info,runtime::revive=debug" cargo run --release --bin substrate-node -- --dev
 ```
+
+### A Word On Logging
+
+Above, we set `RUST_LOG` in order to increase the log level of our contract related components. We also reduce the log level for all other components
+to `error` to reduce the amount of unrelated information. The variable is evaluated when we run the node. Not at compile time.
+
+For more detailed logging you can increase the log level to `runtime::revive=trace`. This will log every host function call the contract performs. To show logs
+from PolkaVM add `polkavm=debug` or even `polkavm=trace`.
 
 ## Build and Run Eth RPC Proxy
 
