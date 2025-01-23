@@ -1,7 +1,6 @@
 import React from 'react'
 import { EthersAdapter } from '@reown/appkit-adapter-ethers'
 import { createAppKit } from '@reown/appkit'
-import { useAppKit } from '@reown/appkit/react'
 
 const projectId = 'c1455e18050fa3e0857a79ac38187ba5'
 
@@ -26,6 +25,12 @@ const Westend = {
   rpcUrls: {
     default: {
       http: ['https://westend-asset-hub-eth-rpc.polkadot.io'],
+    },
+  },
+  blockExplorers: {
+    default: {
+      name: 'Subscan',
+      url: 'https://westend-asset-hub-eth-explorer.parity.io',
     },
   },
 }

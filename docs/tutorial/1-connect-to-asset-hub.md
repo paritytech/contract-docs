@@ -23,7 +23,7 @@ Connect your MetaMask wallet to Asset Hub using the following link:
 - RPC URL URL: `https://westend-asset-hub-eth-rpc.polkadot.io`
 - Chain ID: `420420421`
 - Currency Symbol: `WND`
-- Block Explorer URL: `https://assethub-westend.subscan.io`
+- Block Explorer URL: `https://westend-asset-hub-eth-explorer.parity.io`
 
 For MetaMask see this guide for [manually adding a custom network][add-network] using the settings provided above.
 
