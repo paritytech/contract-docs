@@ -25,7 +25,6 @@ resolc `0.1.0-dev.10`
 - [EIP-4844 opcodes are not supported](https://github.com/paritytech/revive/issues/64)
 - IPFS metadata hashes are not supported
 - [Compiled contract artifacts can exceed the pallet static memory limit and fail to deploy](https://github.com/paritytech/revive/issues/96).
-- Compiling contracts requiring `solc` version earlier than `0.8.0` are not supported.
 
 ## REMIX
 
