@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Using the revive Solidity compiler
+# Usage
 
 ## CLI
 
