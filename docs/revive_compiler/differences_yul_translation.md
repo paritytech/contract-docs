@@ -91,3 +91,8 @@ Related to the Ethereum rollup model and produce a compile time error. Polkadot 
 
 ### `extcodecopy`, `selfdestruct`
 These are deprecated and produce a compile time error.
+
+### `sstore`, `sload`
+Due to the different endianness of the underlying VM target architecture, all values are reversed in storage.
+Contracts compiled by revive itself can't observe this (perforaming a byte-swap before storing and then byte-swapping again after loading would effectively result in a no-op).
+However, for example tools inspecting contract storage or delgate-callees written in different languages need to be aware of it.
