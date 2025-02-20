@@ -30,7 +30,7 @@ The `solc` compiler ought to always emit valid memory references, so Solidity dA
 ### `mload`, `mstore`, `msize`, `mcopy` (memory related functions) 
 In general, revive preserves the memory layout, meaning low level memory operations are supported. However, a few caveats apply:
 - The EVM linear heap memory is emulated using a fixed byte buffer of 64kb. This implies that the maximum memory a contract can use is limited to 64kbit (on Ethereum, contract memory is capped by gas and therefor variable).
-- Thus, accessing memory offsets larger than the fixed buffer size will trap the contract at runtime with `OutOfBound` erros.
+- Thus, accessing memory offsets larger than the fixed buffer size will trap the contract at runtime with an `OutOfBound` error.
 - The compiler might detect and optimize unused memory reads and writes, leading to a different `msize` compared to what the EVM would see. 
 
 ### `calldataload`, `calldatacopy`

@@ -70,9 +70,8 @@ displayed in the wallet accurately represents the actual costs, even though we u
 These resources can also be limited when making a cross-contract call. However, Solidity doesn't allow specifying anything other than `gas_limit`
 for a cross-contract call. Conceptually, the `gas_limit` is most similar to Polkadots `ref_time_limit`. `revive`, our Solidity compiler, **does not supply any imposed `gas_limit`**, for two reasons:
 1. `gas_limit` and `ref_time_limit` are semantically not the same; blindly passing EVM gas as `ref_time_limit` can lead to unexpected behavior.
-2. The other two resources would just be uncapped anyways (since they don't existing in EVM it's unclear what to supply), making it futile to specify limits for any weight dimension. 
-In other words, supplying `ref_time_limit` only is not sufficient to prevent calls to malicious from performing a DOS attack.
-
+2. The other two resources would just be uncapped anyways (since they don't exist in EVM, it's unclear what to supply), making it futile to specify limits for any weight dimension. 
+In other words, supplying `ref_time_limit` only is not sufficient to prevent malicious callees from performing a DOS attack.
 Please note that uncapped means they are still constrained by the transaction-specified limits, so this cannot be used to trick
 the signer of the transaction.
 
