@@ -68,13 +68,17 @@ displayed in the wallet accurately represents the actual costs, even though we u
 #### Cross-Contract Call Gas Limit
 
 These resources can also be limited when making a cross-contract call. However, Solidity doesn't allow specifying anything other than `gas_limit`
-for a cross-contract call. We take the `gas_limit` the contract supplies and use that as `ref_time_limit`. The other two resources are just uncapped
-in this case. Please note that uncapped means they are still constrained by the transaction-specified limits, so this cannot be used to trick
+for a cross-contract call. Conceptually, the `gas_limit` is most similar to Polkadots `ref_time_limit`. `revive`, our Solidity compiler, **does not supply any imposed `gas_limit`**, for two reasons:
+1. `gas_limit` and `ref_time_limit` are semantically not the same; blindly passing EVM gas as `ref_time_limit` can lead to unexpected behavior.
+2. The other two resources would just be uncapped anyways (since they don't exist in EVM, it's unclear what to supply), making it futile to specify limits for any weight dimension. 
+In other words, supplying `ref_time_limit` only is not sufficient to prevent malicious callees from performing a DOS attack.
+Please note that uncapped means they are still constrained by the transaction-specified limits, so this cannot be used to trick
 the signer of the transaction.
 
 Why would you need to limit the resources of a cross-contract call? Generally, when your contract is calling into an untrusted contract.
 In this case, sometimes you need to ensure that you have a certain amount of resources left over to continue executing after the call returns.
 A game loop where you call into untrusted agent contracts is a good example.
+To enable such use-cases the runtime will provide a special precompile allowing to initiate cross-contract calls with limits specified for all weight dimensions.
 
 All other gas-related opcodes like [`GAS`](https://www.evm.codes/?fork=cancun#5a) or [`GAS_LIMIT`](https://www.evm.codes/?fork=cancun#45) will only
 return the `ref_time` as it is the closest match to `gas`. We will provide pre-compiles that will offer extended APIs to make full use
