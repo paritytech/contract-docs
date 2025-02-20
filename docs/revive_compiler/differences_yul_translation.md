@@ -14,7 +14,15 @@ For a high level overview about the differences in the overall runtime architect
 :::
 
 ## Deploy code vs. runtime code
-Our contract runtime does not differentiate between runtime code and deploy (constructor) code. Instead, both are emitted into a single PVM contract code blob and live on-chain. Therefor, in EVM termonology, the deploy code equals the runtime code (with the exception that in constructor code, the `codesize` can be larger, since the constructor arguments account to the code size too).
+Our contract runtime does not differentiate between runtime code and deploy (constructor) code.
+Instead, both are emitted into a single PVM contract code blob and live on-chain.
+Therefor, in EVM termonology, the deploy code equals the runtime code.
+
+:::note
+
+In constructor code, the `codesize` instruction will return the call data size instead of the actual code blob size.
+
+:::
 
 ## YUL functions
 The below list contains noteworthy differences in the translation of YUL functions.
@@ -63,7 +71,10 @@ Deployments on revive work different than on EVM, see also [Differences to Ether
 1. A buffer containing the code hash to deploy.
 2. The constructor arguments buffer.
 
-To make the `new` keyword in Solidity work seamlessly, `revive` translates the `dataoffset` and `datasize` instructions so that they assume the contract hash instead of the contract code. The hash is always of constant size. Thus, `revive` is able to supply the expected code hash and constructor arguments pointer to the runtime. 
+To make contract instantiation using the `new` keyword in Solidity work seamlessly,
+`revive` translates the `dataoffset` and `datasize` instructions so that they assume the contract hash instead of the contract code.
+The hash is always of constant size.
+Thus, `revive` is able to supply the expected code hash and constructor arguments pointer to the runtime. 
 
 :::warning
 
