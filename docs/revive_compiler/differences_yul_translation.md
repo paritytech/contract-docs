@@ -78,7 +78,7 @@ Thus, `revive` is able to supply the expected code hash and constructor argument
 
 :::warning
 
-This might fall apart in code creating contracts inside `assembly` blocks. **We strongly discourage using the `create` family opcodes to manually craft deployments in `assembly` blocks!** Usually, the reason for using `assmebly` blocks is to save gas, which is futile on revive anyways due to lower transaction costs.
+This might fall apart in code creating contracts inside `assembly` blocks. **We strongly discourage using the `create` family opcodes to manually craft deployments in `assembly` blocks!** Usually, the reason for using `assembly` blocks is to save gas, which is futile on revive anyways due to lower transaction costs.
 
 :::
 
