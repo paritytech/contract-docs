@@ -129,8 +129,9 @@ Limits might be increased in the future. To guarantee existing contracts working
 |Event topics|4|
 |Event data payload size (including topics)|416 bytes|
 |Storage value size|416 bytes|
-|Transient storage variables| 128 `uint` values|
-|Immutable variables| 16 `uint` values|
+|Transient storage variables|128 `uint` values|
+|Immutable variables|16 `uint` values|
+|Contract code blob size|~192 kilobytes|
 
 ## Existential Deposit
 
