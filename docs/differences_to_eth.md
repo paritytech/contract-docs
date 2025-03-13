@@ -113,6 +113,26 @@ depth independently of the actual memory consumption. In the future, we might co
 the memory consumption. This would allow for deeper nesting depths when smaller contracts are used. However, it would add yet another resource
 that would need to be limited at the cross-contract boundary, so it would be essential to implement this before stabilizing the API.
 
+### Current limits
+
+Below table depicts memory related limits at the time of writing.
+
+:::note
+
+Limits might be increased in the future. To guarantee existing contracts working as expected we will _never decrease_ the limits.
+
+:::
+
+|Limit|Maximum|
+|-|-|
+|Call stack depth|5|
+|Event topics|4|
+|Event data payload size (including topics)|416 bytes|
+|Storage value size|416 bytes|
+|Transient storage variables|128 `uint` values|
+|Immutable variables|16 `uint` values|
+|Contract code blob size|~100 kilobytes|
+
 ## Existential Deposit
 
 On Polkadot, an account must hold a minimum balance to exist. When it drops below this minimum amount, the account is deleted.
