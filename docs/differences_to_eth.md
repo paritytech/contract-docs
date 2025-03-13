@@ -131,7 +131,7 @@ Limits might be increased in the future. To guarantee existing contracts working
 |Storage value size|416 bytes|
 |Transient storage variables|128 `uint` values|
 |Immutable variables|16 `uint` values|
-|Contract code blob size|~192 kilobytes|
+|Contract code blob size|~100 kilobytes|
 
 ## Existential Deposit
 
