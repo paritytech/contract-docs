@@ -77,10 +77,8 @@ RUST_LOG="info,eth-rpc=debug" cargo run --release -p pallet-revive-eth-rpc -- --
 ## REMIX Setup
 
 1. Open the REMIX IDE.
-2. Navigate to the **Deploy & Run** tab. In the **Environment** dropdown, select **Customize this list...**.
-3. Enable **INJECTED PROVIDER - METAMASK** in the **Deploy using a Browser Extension** section.
-4. From the **Environment** dropdown, select the enabled **Injected Provider - MetaMask**.
-5. Select the pre-founded local account
+2. From the **Environment** dropdown, select the enabled **Injected Provider - MetaMask**.
+3. Select the pre-founded local account
 
 To compile and deploy your smart contract, refer to the [Deploying Your First Contract](./2-deploy-your-first-contract.md) tutorial, keeping the environment settings configured in this section.
 
