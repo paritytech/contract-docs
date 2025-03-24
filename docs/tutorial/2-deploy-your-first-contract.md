@@ -19,6 +19,7 @@ This guide will walk you through deploying and interacting with contracts in REM
 
    Select **Injected Provider - MetaMask** environment in the **Deploy & Run** tab.
    When prompted, allow REMIX to connect to MetaMask. Your account address and balance will be displayed under the **ACCOUNT** section.
+   Ensure you are connected to the **Asset-Hub Westend** network in MetaMask. If you are not already connected, switch to the correct network. Remix will automatically use the network selected in MetaMask.
 
    ![Deploy contract](img/dapp_deploy.png)
 

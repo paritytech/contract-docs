@@ -78,7 +78,8 @@ RUST_LOG="info,eth-rpc=debug" cargo run --release -p pallet-revive-eth-rpc -- --
 
 1. Open the REMIX IDE.
 2. From the **Environment** dropdown, select the enabled **Injected Provider - MetaMask**.
-3. Select the pre-founded local account
+3. Ensure you are connected to the **Kitchensink local** network in MetaMask.
+4. Select the pre-founded local account.
 
 To compile and deploy your smart contract, refer to the [Deploying Your First Contract](./2-deploy-your-first-contract.md) tutorial, keeping the environment settings configured in this section.
 
