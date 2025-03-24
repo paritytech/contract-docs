@@ -13,18 +13,19 @@ This guide will walk you through deploying and interacting with contracts in REM
    By default, REMIX provides a sample workspace. Choose a Solidity contract to compile and click the **▶️** button.
    Alternatively, use the **Solidity Compiler** tab to compile the selected contract.
 
-   ![Compile contract](img/dapp_compile.jpeg)
+   ![Compile contract](img/dapp_compile.png)
 
 2. Deploy to Westend.
 
-   Select **Westend Testnet - MetaMask** environment in the **Deploy & Run** tab.
+   Select **Injected Provider - MetaMask** environment in the **Deploy & Run** tab.
    When prompted, allow REMIX to connect to MetaMask. Your account address and balance will be displayed under the **ACCOUNT** section.
+   Ensure you are connected to the **Asset-Hub Westend** network in MetaMask. If you are not already connected, switch to the correct network. Remix will automatically use the network selected in MetaMask.
 
-   ![Deploy contract](img/dapp_deploy.jpeg)
+   ![Deploy contract](img/dapp_deploy.png)
 
    Click **Deploy** and **Confirm** the transaction in MetaMask.
 
-   ![Confirm transaction](img/dapp_metamask_deploy.jpeg)
+   ![Confirm transaction](img/dapp_metamask_deploy.png)
 
    Wait for the deployment to complete, as indicated in the terminal panel.
 
@@ -41,14 +42,14 @@ This guide will walk you through deploying and interacting with contracts in REM
 
    You can interact with your contract by calling its methods from this section, with all transactions routed through MetaMask.
 
-   ![Call contract](img/dapp_call.jpeg)
+   ![Call contract](img/dapp_call.png)
 
 2. Run Tests.
 
    Currently, REMIX supports JavaScript tests only.
    To run tests, navigate to the **File Explorer** and select any JavaScript test file in the **tests** directory.
 
-   ![Test contract](img/dapp_test.jpeg)
+   ![Test contract](img/dapp_test.png)
 
    Run it by clicking the **▶️** button.
 
