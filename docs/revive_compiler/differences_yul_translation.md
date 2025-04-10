@@ -24,6 +24,11 @@ In constructor code, the `codesize` instruction will return the call data size i
 
 :::
 
+## Solidity
+
+We are aware of the following differences in the translation of Solidity code.
+
+
 ## YUL functions
 The below list contains noteworthy differences in the translation of YUL functions.
 
@@ -102,11 +107,6 @@ Related to the Ethereum rollup model and produce a compile time error. Polkadot 
 
 ### `extcodecopy`, `selfdestruct`
 These are deprecated and produce a compile time error.
-
-### `sstore`, `sload`
-Due to the different endianness of the underlying VM target architecture, all values are reversed in storage.
-Contracts compiled by revive itself can't observe this (perforaming a byte-swap before storing and then byte-swapping again after loading would effectively result in a no-op).
-However, for example tools inspecting contract storage or delgate-callees written in different languages need to be aware of it.
 
 ## Difference regarding the `solc` `via-ir` mode
 There are two different compilation pipelines available in `solc` and [there are small differences between them](https://docs.soliditylang.org/en/latest/ir-breaking-changes.html).
