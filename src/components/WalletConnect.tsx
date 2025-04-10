@@ -29,8 +29,8 @@ const Westend = {
   },
   blockExplorers: {
     default: {
-      name: 'Subscan',
-      url: 'https://westend-asset-hub-eth-explorer.parity.io',
+      name: 'Blockscout',
+      url: 'https://blockscout-asset-hub.parity-chains-scw.parity.io',
     },
   },
 }
