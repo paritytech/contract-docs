@@ -28,6 +28,9 @@ In constructor code, the `codesize` instruction will return the call data size i
 
 We are aware of the following differences in the translation of Solidity code.
 
+### `address.creationCode`
+
+This returns the bytecode keccak256 hash instead.
 
 ## YUL functions
 The below list contains noteworthy differences in the translation of YUL functions.
