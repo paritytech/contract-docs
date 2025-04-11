@@ -15,7 +15,7 @@ The following compiler issues are known and we are working on it. Please do not 
 
 ### Release
 
-resolc `0.1.0-dev.12`
+resolc `0.1.0-dev.13`
 
 ### Missing features
 
