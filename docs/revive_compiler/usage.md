@@ -58,7 +58,9 @@ If the contract uses more stack memory than configured, it will compile fine but
 
 Unlike the EVM, due to the lack of dynamic memory metering, PVM contracts emulate the EVM heap memory with a static buffer. Consequentially, instead of infinite memory with exponentially growing gas costs, PVM contracts have a finite amount of memory with constant gas costs available.
 
-You are incentiviced to keep this value as small as possible: 1.Increasing the heap size will increase startup costs. 2.The heap size contributes to the total memory size a contract can use, which includes the contracts code size
+You are incentiviced to keep this value as small as possible:
+1.Increasing the heap size will increase startup costs.
+2.The heap size contributes to the total memory size a contract can use, which includes the contracts code size
 
 Default value: 65536
           
