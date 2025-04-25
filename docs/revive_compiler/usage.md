@@ -5,10 +5,6 @@ sidebar_position: 2
 # Usage
 The compiler can be used via the `resolc` CLI interface or supported tooling.
 
-## Tooling
-https://github.com/paritytech/foundry-polkadot
-https://github.com/paritytech/hardhat-polkadot
-
 ## CLI
 
 The usage of `resolc` is kept similar to the Ethereum Solidity `solc` compiler. Standard and combined JSON input is supported. We aim to keep it as close to a drop-in replacement to `solc` as possible. However, due to fundamental differences of our contracts stack, there are a few things and options worthwhile to know about in `resolc` which do not exist in Ethereum.
@@ -91,3 +87,6 @@ Dump all intermediary compiler artifacts to files in the specified directory. Th
   -g
 ```
 Generate source based debug information in the output code file. Useful for debugging and development purposes and disabled by default.
+
+## Tooling
+We provide customized distributions of [hardhat](https://github.com/paritytech/hardhat-polkadot) and [foundry](https://github.com/paritytech/foundry-polkadot) supporting contract compilation via `resolc`. Please refer to their respective docomuntation to learn more.
