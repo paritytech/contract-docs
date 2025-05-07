@@ -7,10 +7,12 @@ import {WalletConnectButton} from '@site/src/components/WalletConnect'
 
 # Connect to Asset Hub
 
-- Install an Ethereum wallet of your choice, such as the [MetaMask] browser extension.
+- Install an Ethereum wallet of your choice, such as the [Talisman] or the [MetaMask] browser extension.
 - Create a new account (if you don’t already have one), and click on the button below to connect to a network.
 
-# Connect to Asset Hub Westend Testnet
+Note that MetaMask enforces Ethereum contract size limits. If you want to deploy larger contracts, choose Talisman instead.
+
+# Connect to Asset Hub Westend Testnet (Applicable to MetaMask only)
 
 Connect your MetaMask wallet to Asset Hub using the following link:
 
@@ -37,3 +39,4 @@ Simply enter your MetaMask address and click **Send** to request Westend tokens.
 
 [add-network]: https://support.metamask.io/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc/#adding-a-network-manually
 [MetaMask]: https://support.metamask.io/getting-started/getting-started-with-metamask/#how-to-install-metamask
+[Talisman]: https://talisman.xyz/download
