@@ -17,15 +17,25 @@ This guide will walk you through deploying and interacting with contracts in REM
 
 2. Deploy to Westend.
 
-   Select **Injected Provider - MetaMask** environment in the **Deploy & Run** tab.
-   When prompted, allow REMIX to connect to MetaMask. Your account address and balance will be displayed under the **ACCOUNT** section.
-   Ensure you are connected to the **Asset-Hub Westend** network in MetaMask. If you are not already connected, switch to the correct network. Remix will automatically use the network selected in MetaMask.
+   1. Using the Talisman wallet
 
-   ![Deploy contract](img/dapp_deploy.png)
+      Select the **Injected Provider - Talisman** environment in the **Deploy & Run** tab. When prompted, allow Remix to connect to Talisman.
+      Switch to the **Westend Asset Hub** network in Talisman. Make sure **Enable Testnets** is checked in Talisman to see the network.
+      Your account address and balance will appear under the **ACCOUNT** section. Remix will automatically use the network selected in Talisman.
 
-   Click **Deploy** and **Confirm** the transaction in MetaMask.
+      ![Deploy contract](img/dapp_deploy_with_talisman.png)
 
-   ![Confirm transaction](img/dapp_metamask_deploy.png)
+      Click **Deploy** and **Confirm** the transaction in Talisman.
+
+   2. Using the MetaMask wallet
+
+      Select **Injected Provider - MetaMask** environment in the **Deploy & Run** tab.
+      When prompted, allow REMIX to connect to MetaMask. Your account address and balance will be displayed under the **ACCOUNT** section.
+      Ensure you are connected to the **Asset-Hub Westend** network in MetaMask. If you are not already connected, switch to the correct network. Remix will automatically use the network selected in MetaMask.
+
+      ![Deploy contract](img/dapp_deploy.png)
+
+      Click **Deploy** and **Confirm** the transaction in MetaMask.
 
    Wait for the deployment to complete, as indicated in the terminal panel.
 
@@ -40,7 +50,7 @@ This guide will walk you through deploying and interacting with contracts in REM
 
    ![Pin contract](img/pin.png)
 
-   You can interact with your contract by calling its methods from this section, with all transactions routed through MetaMask.
+   You can interact with your contract by calling its methods from this section, with all transactions routed through your wallet.
 
    ![Call contract](img/dapp_call.png)
 
