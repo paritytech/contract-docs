@@ -8,7 +8,7 @@ import {WalletConnectButton} from '@site/src/components/WalletConnect'
 # Connect to Asset Hub
 
 - Install an Ethereum wallet of your choice, such as the [Talisman] or the [MetaMask] browser extension.
-- Create a new account (if you don’t already have one), and click on the button below to connect to a network.
+- Create a new Ethereum account (if you don’t already have one).
 
 Note that MetaMask enforces Ethereum contract size limits. If you want to deploy larger contracts, choose Talisman instead.
 
@@ -35,7 +35,7 @@ For MetaMask see this guide for [manually adding a custom network][add-network] 
 
 You will need some test tokens to interact with the testnet.
 You can request Westend tokens from the [Westend Faucet](https://faucet.polkadot.io/westend?parachain=1000).
-Simply enter your MetaMask address and click **Send** to request Westend tokens.
+Simply enter your Ethereum address and click **Send** to request Westend tokens.
 
 [add-network]: https://support.metamask.io/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc/#adding-a-network-manually
 [MetaMask]: https://support.metamask.io/getting-started/getting-started-with-metamask/#how-to-install-metamask
