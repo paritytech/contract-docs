@@ -10,7 +10,11 @@ import {WalletConnectButton} from '@site/src/components/WalletConnect'
 - Install an Ethereum wallet of your choice, such as the [Talisman] or the [MetaMask] browser extension.
 - Create a new Ethereum account (if you don’t already have one).
 
-Note that MetaMask enforces Ethereum contract size limits. If you want to deploy larger contracts, choose Talisman instead.
+:::note
+
+MetaMask enforces Ethereum contract size limits. If you want to deploy larger contracts, choose Talisman instead.
+
+:::
 
 # Connect to Asset Hub Westend Testnet (Applicable to MetaMask only)
 
