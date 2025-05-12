@@ -7,7 +7,7 @@ import {WalletConnectButton} from '@site/src/components/WalletConnect'
 
 # Connect to Asset Hub
 
-- Install an Ethereum wallet of your choice, such as the [Talisman] or the [MetaMask] browser extension.
+- Install an Ethereum wallet of your choice, such as [Talisman] or [MetaMask] browser extension.
 - Create a new Ethereum account (if you don’t already have one).
 
 :::note
