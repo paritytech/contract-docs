@@ -27,7 +27,7 @@ This guide will walk you through deploying and interacting with contracts in REM
 
       Click **Deploy** and **Confirm** the transaction in Talisman.
 
-   2. Using the MetaMask wallet
+   2. Using MetaMask wallet
 
       Select **Injected Provider - MetaMask** environment in the **Deploy & Run** tab.
       When prompted, allow REMIX to connect to MetaMask. Your account address and balance will be displayed under the **ACCOUNT** section.
