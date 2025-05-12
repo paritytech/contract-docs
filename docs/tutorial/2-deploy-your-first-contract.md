@@ -17,7 +17,7 @@ This guide will walk you through deploying and interacting with contracts in REM
 
 2. Deploy to Westend.
 
-   1. Using the Talisman wallet
+   1. Using Talisman wallet
 
       Select the **Injected Provider - Talisman** environment in the **Deploy & Run** tab. When prompted, allow Remix to connect to Talisman.
       Switch to the **Westend Asset Hub** network in Talisman. Make sure **Enable Testnets** is checked in Talisman to see the network.
