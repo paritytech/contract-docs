@@ -12,7 +12,7 @@ import {WalletConnectButton} from '@site/src/components/WalletConnect'
 
 :::note
 
-MetaMask enforces Ethereum contract size limits. If you want to deploy larger contracts, choose Talisman instead.
+MetaMask enforces Ethereum contract size limits. If you want to deploy larger contracts, choose Talisman instead. Calling contracts is unaffected by this size limit.
 
 :::
 
