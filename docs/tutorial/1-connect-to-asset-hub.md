@@ -38,7 +38,7 @@ For MetaMask see this guide for [manually adding a custom network][add-network] 
 # Request some Test WND Tokens
 
 You will need some test tokens to interact with the testnet.
-You can request Westend tokens from the [Westend Faucet](https://faucet.polkadot.io/westend?parachain=1000).
+You can request Westend tokens from the [Westend Faucet](https://faucet.polkadot.io/westend).
 Simply enter your Ethereum address and click **Send** to request Westend tokens.
 
 [add-network]: https://support.metamask.io/networks-and-sidechains/managing-networks/how-to-add-a-custom-network-rpc/#adding-a-network-manually
