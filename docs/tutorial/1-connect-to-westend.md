@@ -1,11 +1,11 @@
 ---
 sidebar_position: 1
-slug: /connect-to-asset-hub
+slug: /connect-to-westend
 ---
 
 import {WalletConnectButton} from '@site/src/components/WalletConnect'
 
-# Connect to Asset Hub
+# Connect to Westend
 
 - Install an Ethereum wallet of your choice, such as [Talisman] or [MetaMask] browser extension.
 - Create a new Ethereum account (if you don’t already have one).
@@ -16,16 +16,16 @@ MetaMask enforces Ethereum contract size limits. If you want to deploy larger co
 
 :::
 
-# Connect to Asset Hub Westend Testnet (Applicable to MetaMask only)
+# Connect to Westend (Applicable to MetaMask only)
 
-Connect your MetaMask wallet to Asset Hub using the following link:
+Connect your MetaMask wallet to Westend using the following link:
 
 <WalletConnectButton />
 <br /><sub><sup>(Try reloading the page if the link does not work)</sup></sub>
 
 <details>
 <summary>Or add it manually</summary>
-- Network name: Asset-Hub Westend Testnet
+- Network name: Westend
 - RPC URL URL: `https://westend-asset-hub-eth-rpc.polkadot.io`
 - Chain ID: `420420421`
 - Currency Symbol: `WND`

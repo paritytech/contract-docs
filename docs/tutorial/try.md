@@ -116,7 +116,7 @@ extrinsics. We’re using the `1_Storage.sol` example contract here, which you c
 
 When registering, you will sign the transaction with a Polkadot native wallet and signature scheme, likely even a pre-existing
 account. To use a Polkadot native wallet, you need to register (or "map") your account with `pallet_revive`. This is a one-time
-action and is necessary to enable mapping between the Asset Hub-native and Ethereum addresses. Ethereum wallets don't require any registration.
+action and is necessary to enable mapping between the Polkadot and Ethereum addresses. Ethereum wallets don't require any registration.
 
 1. Go to Polkadot.js Apps, connect to Westend AssetHub, and go to the `Developer -> Extrinsics` tab.
 [Here](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fwestend-asset-hub-rpc.polkadot.io#/extrinsics) is a direct link.

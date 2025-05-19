@@ -20,7 +20,7 @@ This guide will walk you through deploying and interacting with contracts in REM
    1. Using Talisman wallet
 
       Select the **Injected Provider - Talisman** environment in the **Deploy & Run** tab. When prompted, allow Remix to connect to Talisman.
-      Switch to the **Westend Asset Hub** network in Talisman. Make sure **Enable Testnets** is checked in Talisman to see the network.
+      Switch to the **Westend** network in Talisman. Make sure **Enable Testnets** is checked in Talisman to see the network.
       Your account address and balance will appear under the **ACCOUNT** section. Remix will automatically use the network selected in Talisman.
 
       ![Deploy contract](img/dapp_deploy_with_talisman.png)
@@ -31,7 +31,7 @@ This guide will walk you through deploying and interacting with contracts in REM
 
       Select **Injected Provider - MetaMask** environment in the **Deploy & Run** tab.
       When prompted, allow REMIX to connect to MetaMask. Your account address and balance will be displayed under the **ACCOUNT** section.
-      Ensure you are connected to the **Asset-Hub Westend** network in MetaMask. If you are not already connected, switch to the correct network. Remix will automatically use the network selected in MetaMask.
+      Ensure you are connected to the **Westend** network in MetaMask. If you are not already connected, switch to the correct network. Remix will automatically use the network selected in MetaMask.
 
       ![Deploy contract](img/dapp_deploy.png)
 
