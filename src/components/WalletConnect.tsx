@@ -16,10 +16,10 @@ const Westend = {
   chainNamespace: 'eip155',
   chainId: 420420421,
   caipNetworkId: 'eip155:420420421',
-  name: 'Asset Hub Westend',
+  name: 'Westend Asset Hub',
   nativeCurrency: {
     name: 'Westie',
-    symbol: 'WST',
+    symbol: 'WND',
     decimals: 18,
   },
   rpcUrls: {
