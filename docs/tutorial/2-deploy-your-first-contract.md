@@ -33,6 +33,19 @@ This guide will walk you through deploying and interacting with contracts in REM
       When prompted, allow REMIX to connect to MetaMask. Your account address and balance will be displayed under the **ACCOUNT** section.
       Ensure you are connected to the **Westend** network in MetaMask. If you are not already connected, switch to the correct network. Remix will automatically use the network selected in MetaMask.
 
+      <details>
+      <summary>Troubleshoot: "Injected Provider - MetaMask" is not listed</summary>
+
+      If **Injected Provider - MetaMask** is not listed in the environments list and you are using the MetaMask extension, the extension may be configured to only read/write data on click.
+
+      Try the following steps:
+      1. Have the Remix IDE window open
+      2. Click on the MetaMask extension icon
+      3. Reload the Remix IDE window
+      4. Redo the compilation and select your environment
+
+      </details>
+
       ![Deploy contract](img/dapp_deploy.png)
 
       Click **Deploy** and **Confirm** the transaction in MetaMask.
