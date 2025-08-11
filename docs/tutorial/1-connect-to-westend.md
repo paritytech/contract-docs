@@ -18,10 +18,10 @@ MetaMask enforces Ethereum contract size limits. If you want to deploy larger co
 
 # Connect to Westend (Applicable to MetaMask only)
 
-Connect your MetaMask wallet to Westend using the following link:
+Reload the page and connect your MetaMask wallet to Westend using the following link:
 
 <WalletConnectButton />
-<br /><sub><sup>(Try reloading the page if the link does not work)</sup></sub>
+<br />
 
 <details>
 <summary>Or add it manually</summary>
